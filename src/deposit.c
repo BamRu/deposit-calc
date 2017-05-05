@@ -2,6 +2,19 @@
 #include "deposit.h"
 
 
+int data(int s,int d)
+{  
+  if ((s>9999)&&((d>0)&&(d<366)))
+    {
+      return 0;
+    }
+  else
+    { 
+      return -1;
+    }
+  
+}
+
 int itog(int s,int d)
 {
 	if (s<100001)
@@ -45,10 +58,3 @@ int itog(int s,int d)
          printf ("Itog:%d",s);
          return s ;
 }
-
-
-
-
-
-
-
